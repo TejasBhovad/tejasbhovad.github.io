@@ -194,14 +194,28 @@ h2 {
   font-weight: lighter;
 }
 .error-icon {
-  padding-top: rem;
+  margin-top: 5rem;
   font-size: 10rem;
   color: #494e54;
   transition: ease-in-out 0.2s;
   cursor: pointer;
 }
 .error-icon:hover {
-  color: #524644;
+  color: #534d4d;
+  transition: ease-in-out 0.2s;
+}
+.home{
+  margin-top: 10rem;
+  font-size: 0.1rem;
+  text-decoration: none;
+  color: #30434a;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: Roboto, Helvetica, sans-serif;
+  transition: ease-in-out 0.2s;
+}
+.home:hover{
+  color: #527684;
   transition: ease-in-out 0.2s;
 }
 
