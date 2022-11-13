@@ -377,13 +377,7 @@
                 value=""
               />
               <br />
-              <input
-                type="submit"
-                id="submit"
-                name="submit"
-                value="Submit"
-                onclick="submitResponse();event.preventDefault();"
-              />
+              <input type="submit" id="submit" name="submit" value="Submit" ] />
             </form>
             <iframe
               name="hidden_iframe"
@@ -391,7 +385,26 @@
               style="display: none"
               onload="if(submitted) {}"
             ></iframe>
+            <script src="assets/js/jquery.min.js"></script>
+            <script type="text/javascript">
+              var submitted = false;
+            </script>
+            <script type="text/javascript">
+              $("#gform").on("submit", function () {
+                $("#submit").val("Submitted");
+                $("#submit").attr("id", "submitted");
+                //document.getElementById("entry.1622994508").readOnly = true;
+                $('input[name="entry.1622994508"]').prop("readonly", true);
+                $('input[name="entry.1361586968"]').prop("readonly", true);
+                $('input[name="entry.1530903076"]').prop("readonly", true);
+                $('input[name="entry.486164849"]').prop("readonly", true);
+                // document.getElementById("entry.1361586968").readOnly = true;
+                // document.getElementById("entry.1530903076").readOnly = true;
+                // document.getElementById("entry.486164849").readOnly = true;
 
+                return true;
+              });
+            </script>
             <br />
             <h3>OR</h3>
             <p>

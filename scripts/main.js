@@ -125,6 +125,7 @@ function scrollAbout() {
   var elem = document.getElementById("scrollAbout");
   elem.scrollIntoView();
 }
+
 // fetch("./projects.json")
 //   .then((response) => response.json())
 //   .then((json) => console.log(json));
