@@ -294,7 +294,7 @@
               />
 
               <div class="tags">
-                <p id="tag-one">Java</p>
+                <p id="tag-one">JavaFX</p>
                 <p id="tag-two">image manipulation</p>
                 <p id="tag-three">Desktop App</p>
               </div>
@@ -398,11 +398,14 @@
                 $('input[name="entry.1361586968"]').prop("readonly", true);
                 $('input[name="entry.1530903076"]').prop("readonly", true);
                 $('input[name="entry.486164849"]').prop("readonly", true);
+
+                // Added last session
                 // document.getElementById("entry.1361586968").readOnly = true;
                 // document.getElementById("entry.1530903076").readOnly = true;
                 // document.getElementById("entry.486164849").readOnly = true;
 
                 return true;
+                $("#gform")[0].reset();
               });
             </script>
             <br />

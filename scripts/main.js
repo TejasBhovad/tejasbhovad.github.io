@@ -37,7 +37,7 @@ projectLink = [
   "https://github.com/TejasBhovad/upixel",
   "https://tejasbhovad.github.io/",
 ];
-tags_one = ["Java", "Web Dev", "test"];
+tags_one = ["JavaFx", "Web Dev", "test"];
 tags_two = ["image manipulation", "portfolio website"];
 tags_three = ["Desktop App", "dynamic"];
 img_src = ["/assets/images/upixel--icon.png", "/assets/images/site--icon.png"];

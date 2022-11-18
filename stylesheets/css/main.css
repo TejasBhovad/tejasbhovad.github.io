@@ -18,7 +18,7 @@ body {
 
 .hero-section {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   left: 0;
   top: 0;
@@ -640,13 +640,21 @@ body {
   transform: translateY(-80%);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section {
+  height: 100%;
+}
 .contact-section .container {
   display: flex;
 }
 .contact-section .container .form-input {
   flex-direction: column;
   width: 70%;
-  height: 100vh;
+  height: 100%;
   display: flex;
 }
 .contact-section .container .form-input form {
@@ -743,19 +751,18 @@ body {
   width: 30%;
   font-size: 20rem;
   margin: auto;
-  transform: translateY(7.5%);
   color: #51503e;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
 }
 .contact-section .container .form-logo i {
   width: 100%;
-  height: 100;
+  height: 100%;
   transform: translateX(-7.5%);
 }
 
 .footer {
-  top: 501%;
+  top: 500%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -952,7 +959,7 @@ body {
   }
   .skill-section .icon-skill {
     width: 100%;
-    height: 30%;
+    height: 16%;
   }
   .skill-section .icon-skill .contain {
     justify-content: center;
@@ -965,9 +972,20 @@ body {
     width: 5%;
     margin: 0;
     margin-top: 3.5%;
-    min-width: 18%;
-    min-height: 5%;
+    margin-bottom: 3.5%;
+    min-width: 16%;
+    min-height: 2%;
     margin-left: 0.5rem;
+  }
+  .skill-section .icon-exp {
+    margin: auto;
+    justify-content: center;
+  }
+  .skill-section .icon-exp .box {
+    height: 2vh;
+    min-height: 15vh;
+    margin: auto;
+    margin-bottom: 1rem;
   }
   .project-section .banner {
     font-size: 3.75rem;
@@ -1040,6 +1058,107 @@ body {
     width: 78%;
   }
   .contact-section .container .form-logo {
+    display: none;
+  }
+  .footer {
+    height: 5%;
+    margin: 0;
+    background-color: #323539;
+    padding: 0%;
+  }
+  .footer .bottom--footer {
+    height: 100%;
+    background-color: #26272a;
+    margin: 0;
+    z-index: 5;
+  }
+  .footer .top--footer {
+    display: none;
+    padding: 0%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .project-section .banner {
+    font-size: 3.75rem;
+  }
+  .project-section .contain {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project-section .contain .title-image {
+    width: 100%;
+    height: 80%;
+  }
+  .project-section .contain .title-image .right-arrow {
+    width: 0;
+  }
+  .project-section .contain .title-image .right-arrow a {
+    font-size: 0;
+    padding: 0;
+  }
+  .project-section .contain .title-image .left-arrow {
+    width: 0;
+  }
+  .project-section .contain .title-image .left-arrow a {
+    font-size: 0;
+    padding: 0;
+  }
+  .project-section .contain .title-image .main-content {
+    width: 100%;
+    margin: 0;
+    margin-top: 20%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  .project-section .contain .title-image .main-content .title {
+    margin-bottom: 10%;
+    font-size: 1rem;
+  }
+  .project-section .contain .title-image .main-content .title #projectTitle {
+    font-size: 3rem;
+    margin: auto;
+  }
+  .project-section .contain .title-image .main-content img {
+    width: 80%;
+  }
+  .project-section .contain .title-image .main-content .tags p {
+    font-size: 0.98rem;
+    white-space: nowrap;
+    text-overflow: clip;
+    padding: 2%;
+    padding-right: 2.4%;
+    padding-left: 2.4%;
+  }
+  .project-section .contain .desc {
+    margin-top: 40%;
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 1rem;
+  }
+  .project-section .contain .desc p {
+    margin: auto;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 1%;
+  }
+  .project-section .contain .desc .contact-section .container {
+    margin: auto;
+    width: 100%;
+  }
+  .project-section .contain .desc .contact-section .container .form-input {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    margin: auto;
+  }
+  .project-section .contain .desc .contact-section .container .form-input form {
+    margin: auto;
+  }
+  .project-section .contain .desc .contact-section .container .form-logo {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
