@@ -972,6 +972,9 @@ body {
   .sticky {
     display: none;
   }
+  .mail {
+    display: none;
+  }
   .circle {
     display: none;
   }
@@ -1352,7 +1355,7 @@ body {
         .contact-section {
           .container {
             margin: auto;
-          //transform: translateY(-80%);
+            //transform: translateY(-80%);
             .form-input {
               align-items: center;
               justify-content: center;
@@ -1363,7 +1366,6 @@ body {
               form {
                 margin: auto;
               }
-              
             }
             .form-logo {
               display: none;

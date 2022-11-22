@@ -854,6 +854,9 @@ body {
   .sticky {
     display: none;
   }
+  .mail {
+    display: none;
+  }
   .circle {
     display: none;
   }
