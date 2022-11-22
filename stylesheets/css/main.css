@@ -1078,6 +1078,9 @@ body {
   }
 }
 @media only screen and (max-width: 500px) {
+  .mail {
+    display: none;
+  }
   .project-section .banner {
     font-size: 3.75rem;
   }

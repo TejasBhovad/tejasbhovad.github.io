@@ -1261,8 +1261,12 @@ body {
       padding: 0%;
     }
   }
+  // Add mail para to main content
 }
 @media only screen and (max-width: 500px) {
+  .mail {
+    display: none;
+  }
   .project-section {
     .banner {
       font-size: 3.75rem;
@@ -1348,7 +1352,7 @@ body {
         .contact-section {
           .container {
             margin: auto;
-            //transform: translateY(-80%);
+          //transform: translateY(-80%);
             .form-input {
               align-items: center;
               justify-content: center;
@@ -1359,6 +1363,7 @@ body {
               form {
                 margin: auto;
               }
+              
             }
             .form-logo {
               display: none;
