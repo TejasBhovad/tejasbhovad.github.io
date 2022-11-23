@@ -43,6 +43,7 @@ body {
   font-family: "Inter", sans-serif;
   width: 100vh;
   margin: 0;
+  font-display: fallback;
   padding: 0;
   //overflow-y: scroll;
   //overflow: hidden;
@@ -928,7 +929,7 @@ body {
     height: 30%;
     //display: flex;
     color: #717171;
-    background-color: $primaryBG;
+    background-color: #383a3f;
     //justify-content: center;
     margin-top: 3%;
     a {
@@ -1254,7 +1255,7 @@ body {
     padding: 0%;
     .bottom--footer {
       height: 100%;
-      background-color: $primaryBG;
+      //background-color: $primaryBG;
       margin: 0;
       z-index: 5;
     }

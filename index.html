@@ -16,6 +16,7 @@
       name="keywords"
       content="TejasBhovad,tejas-bhovad,tejasbhovad,tejas,portfolio,website"
     />
+    <meta name="theme-color" content="#212224" />
     <meta name="author" content="Tejas Bhovad" />
     <meta property="og:title" content="Tejas Bhovad | Portfolio" />
     <meta
@@ -61,8 +62,6 @@
     <!-- Script Links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/scripts/main.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
     <div class="main">
@@ -71,20 +70,26 @@
         <ul class="list-inline">
           <li>
             <div class="circle hero">
-              <a href="#hero"> <i class="fa fa-home"></i></a>
+              <a name="Home" href="#hero"> <i class="fa fa-home"></i></a>
             </div>
           </li>
           <li>
-            <div class="circle about"><a href="#about">1</a></div>
+            <div class="circle about"><a name="About" href="#about">1</a></div>
           </li>
           <li>
-            <div class="circle skill"><a href="#skills">2</a></div>
+            <div class="circle skill">
+              <a name="Skills" href="#skills">2</a>
+            </div>
           </li>
           <li>
-            <div class="circle project"><a href="#projects">3</a></div>
+            <div class="circle project">
+              <a name="Projects" href="#projects">3</a>
+            </div>
           </li>
           <li>
-            <div class="circle contact"><a href="#contact">4</a></div>
+            <div class="circle contact">
+              <a name="Contact" href="#contact">4</a>
+            </div>
           </li>
         </ul>
       </nav>
@@ -387,7 +392,7 @@
             <!-- check what is submitted variable -->
             <!-- <script src="assets/js/jquery.min.js"></script> -->
             <script type="text/javascript">
-              var submitted = false;
+              //var submitted = false;
             </script>
             <script type="text/javascript">
               $("#gform").on("submit", function () {
@@ -459,11 +464,7 @@
       </div>
       <div class="bottom--footer">
         <a id="copyright"
-          >© Copyright
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          Tejas Bhovad. All Rights Reserved.</a
+          >© Copyright 2022 Tejas Bhovad. All Rights Reserved.</a
         >
       </div>
     </div>
