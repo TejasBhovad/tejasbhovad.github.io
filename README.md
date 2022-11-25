@@ -46,4 +46,4 @@ I plan on keeping this site updated as and when possible
 ## ⚖️ License
 
 - [MIT License](License.md)
-- Copyright 2020 © Tejas Bhovad
+- Copyright 2022 © Tejas Bhovad
