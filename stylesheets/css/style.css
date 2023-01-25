@@ -1,0 +1,136 @@
+* {
+  font-family: Inter, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(48, 49, 49);
+}
+
+.card::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  background: #ffffff;
+  transition: ease-in-out 0.25s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.card:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px #ffffff;
+}
+
+.card:hover {
+  color: #ffee10;
+  box-shadow: 0 0px 8px #ffffff;
+  text-shadow: 0 0 1.5px #979797;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.main .app {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.main .low {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-s;
+}
+.main .low .contain {
+  height: 90%;
+  width: 70%;
+  display: flex;
+  max-width: 60rem;
+  max-height: 40rem;
+}
+.main .low .contain .split {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .low .contain .split .card {
+  transition: ease-in-out 0.25s;
+  width: 90%;
+  background-color: rgb(83, 83, 83);
+  height: 90%;
+  border-radius: 0.75rem;
+}
+.main .low .contain .split .card .icon {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .low .contain .split .card .icon svg {
+  width: 95%;
+  height: 95%;
+  fill: rgb(197, 197, 197);
+  transition: ease-in-out 0.25s;
+}
+.main .low .contain .split .card .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 10%;
+  width: 100%;
+}
+.main .low .contain .split .card .desc {
+  height: 20%;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .low .contain .split .card:hover {
+  border-style: solid;
+  transition: ease-in-out 0.15s;
+  border-color: rgb(248, 248, 248);
+  border-width: 0.1rem;
+}
+.main .low .contain .split .card:hover svg {
+  fill: rgb(248, 248, 248);
+  transition: ease-in-out 0.25s;
+}
+
+@media screen and (max-width: 768px) {
+  .main .app {
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 1.35rem;
+    width: 90%;
+  }
+  .main .low .contain {
+    flex-direction: column;
+  }
+  .main .low .contain .split {
+    width: 100%;
+    height: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
