@@ -1,15 +1,16 @@
 {
-  "name": "site",
-  "private": true,
-  "version": "0.0.0",
+  "name": "evolved-escape",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "devDependencies": {
-    "sass": "^1.57.1",
-    "vite": "^4.0.0"
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.0.3",
+    "astro": "^2.5.6"
   }
 }

@@ -1,0 +1,63 @@
+---
+const { title, pColor, sColor, url } = Astro.props;
+import "@fontsource-variable/inter";
+---
+
+<div class="card">
+  <h2 class="heading">{title}</h2>
+  <!-- Logo will go here in slot-->
+  <slot />
+  <br />
+  <a class="visit" href={url}>visit</a>
+</div>
+<style define:vars={{ pColor, sColor }}>
+  slug {
+    /* margin: auto; */
+    min-height: 30rem;
+  }
+  .card {
+    overflow: hidden;
+    height: 100%;
+    width: auto;
+    min-width: 12rem;
+    font-family: "Inter Variable", Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    transition: ease-in-out 0.2s;
+  }
+  a.visit {
+    text-decoration: none;
+    display: flex;
+    background-color: var(--sColor);
+    border: none;
+    border-radius: 0.75rem;
+    margin-top: 2rem;
+    color: var(--pColor);
+    width: 15rem;
+    font-size: 3rem;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-text: center;
+    line-height: 4rem;
+    margin-bottom: 5rem;
+    padding: 0;
+    font-weight: bolder;
+    transition: ease-in-out 0.2s;
+  }
+  a:hover {
+    scale: 1.05;
+  }
+  a:active {
+    scale: 0.95;
+  }
+  .heading {
+    font-size: 2.75rem;
+    color: var(--sColor);
+    margin-bottom: 10%;
+  }
+</style>
